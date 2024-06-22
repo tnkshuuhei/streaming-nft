@@ -12,5 +12,8 @@
     "test:coverage": "forge coverage",
     "format": "forge fmt",
     "clean": "rm -rf cache out"
+  },
+  "dependencies": {
+    "ethers": "^6.13.1"
   }
 }

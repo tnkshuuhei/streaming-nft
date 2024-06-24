@@ -7,8 +7,8 @@
     "compile": "forge compile",
     "build": "forge fmt && forge build",
     "test": "forge test",
-    "test:polygon": "forge fmt && forge test --fork-url $POLYGON_MUMBAI_RPC_URL --match-path test/Counter.t.sol",
-    "deploy:mumbai": "forge fmt && forge script script/Counter.s.sol --rpc-url $POLYGON_MUMBAI_RPC_URL --broadcast -vvvv --private-key $DEPLOYER_PRIVATE_KEY --etherscan-api-key $API_KEY_POLYGONSCAN --verify",
+    "test:polygon": "forge fmt && source .env && && forge test --fork-url $OPTIMISM_SEPOLIA_RPC_URL --match-path test/Counter.t.sol",
+    "deploy:op-sepolia": "forge fmt && source .env && forge script script/PureSuperToken.s.sol --rpc-url $OPTIMISM_SEPOLIA_RPC_URL --broadcast -vvvv --private-key $DEPLOYER_PRIVATE_KEY --etherscan-api-key $API_KEY_OPTIMISTIC_ETHERSCAN --verify",
     "test:coverage": "forge coverage",
     "format": "forge fmt",
     "clean": "rm -rf cache out"

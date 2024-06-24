@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.23;
 
-import { Script } from "lib/forge-std/src/Script.sol";
-import { SuperPureToken } from "../src/SuperPureToken.sol";
+import {Script} from "lib/forge-std/src/Script.sol";
+import {SuperPureToken} from "../src/SuperPureToken.sol";
 
 contract DeployPureSuperToken is Script {
     function run() external {
